@@ -1,0 +1,82 @@
+version: 1
+build:
+  binary: meowd
+  proto:
+    path: proto
+    third_party_paths:
+    - third_party/proto
+    - proto_vendor
+accounts:
+- name: alice
+  coins:
+  - 10100000000000000000000000ameow
+  mnemonic: history perfect across group seek acoustic delay captain sauce audit carpet
+    tattoo exhaust green there giant cluster want pond bulk close screen scissors
+    remind
+- name: bob
+  coins:
+  - 5000000000000ameow
+  mnemonic: limb sister humor wisdom elephant weasel beyond must any desert glance
+    stem reform soccer include chest chef clerk call popular display nerve priority
+    venture
+faucet:
+  name: bob
+  coins:
+  - 10ameow
+  host: 0.0.0.0:4500
+client:
+  vuex:
+    path: vue/src/store
+  openapi:
+    path: docs/static/openapi.yml
+genesis:
+  app_state:
+    crisis:
+      constant_fee:
+        denom: ameow
+    evm:
+      params:
+        evm_denom: ameow
+    gov:
+      deposit_params:
+        min_deposit:
+        - amount: "10000000"
+          denom: ameow
+      voting_params:
+        voting_period: 120s
+    inflation:
+      params:
+        mint_denom: ameow
+    mint:
+      params:
+        mint_denom: ameow
+    staking:
+      params:
+        bond_denom: ameow
+  chain_id: meow_6666-1
+validators:
+- name: alice
+  bonded: 100000000000000000000000ameow
+  app:
+    api:
+      swagger: true
+    evm-rpc:
+      address: 0.0.0.0:8545
+      ws-address: 0.0.0.0:8546
+    grpc-web:
+      enable: true
+    json-rpc:
+      api: eth,txpool,personal,net,debug,web3
+    rpc:
+      cors_allowed_origins:
+      - '*'
+  config:
+    cors_allowed_origins:
+    - '*'
+  client:
+    broadcast-mode: sync
+    chain-id: meow_6666-1
+    keyring-backend: test
+    node: tcp://localhost:26657
+    output: text
+  home: $HOME/.meow
