@@ -1,0 +1,42 @@
+{
+    "chain_config": {
+        "network": "testnet",
+        "json_rpc": "https://rpc1.fivenet.sixscan.io",
+        "denom": "usix",
+        "prefix": "6x",
+        "gas_price": "0.1usix"
+    },
+    "contract_data": {
+        "codeId": "",
+        "contract_addr": ""
+    },
+    "fees": {
+        "upload": {
+            "amount": [
+                {
+                    "amount": "250000",
+                    "denom": "usix"
+                }
+            ],
+            "gas": "2500000"
+        },
+        "init": {
+            "amount": [
+                {
+                    "amount": "50000",
+                    "denom": "usix"
+                }
+            ],
+            "gas": "500000"
+        },
+        "exec": {
+            "amount": [
+                {
+                    "amount": "30000",
+                    "denom": "usix"
+                }
+            ],
+            "gas": "300000"
+        }
+    }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "deploy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "call":"ts-node",
+    "deploy": "ts-node 010_deploy_wasm.ts testnet && ts-node 020_init_contract.ts testnet",
+    "instantiate" : "ts-node 020_init_contract.ts testnet",
+    "mint": "ts-node 030_mint.ts testnet",
+    "prod-deploy": "ts-node 010_deploy_wasm.ts mainnet && ts-node 020_init_contract.ts mainnet",
+    "prod-instantiate" : "ts-node 020_init_contract.ts mainnet",
+    "prod-mint": "ts-node 030_mint.ts mainnet"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@cosmjs/cosmwasm-stargate": "^0.27.1",
+    "@cosmjs/stargate": "^0.27.1",
+    "dotenv": "^16.0.1",
+    "ethers": "^5.6.9",
+    "lodash": "^4.17.21",
+    "ts-node": "^10.5.0",
+    "web3": "^1.7.4"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.182",
+    "typescript": "^4.6.4"
+  }
+}

@@ -1,0 +1,48 @@
+{
+ "chain_config": {
+  "network": "testnet",
+  "json_rpc": "https://rpc1.fivenet.sixprotocol.net",
+  "denom": "usix",
+  "prefix": "6x",
+  "gas_price": "1.25usix"
+ },
+ "contract_data": {
+  "ticket_vault": {
+   "codeId": 134,
+   "contract_addr": "6x198r7p6y67w7shsunt6j8pqd04sgy8chkh0mgrz4l99z9m3tkk2nswt73sp"
+  },
+  "onetime_ticket": {
+   "codeId": 98,
+   "contract_addr": "6x17alxyv50mupugnylxn25fjfssaugy5xcqtm2pz3rwt02e2d576js4x8fjj"
+  }
+ },
+ "fees": {
+  "upload": {
+   "amount": [
+    {
+     "amount": "6250000",
+     "denom": "usix"
+    }
+   ],
+   "gas": "5000000"
+  },
+  "init": {
+   "amount": [
+    {
+     "amount": "625000",
+     "denom": "usix"
+    }
+   ],
+   "gas": "500000"
+  },
+  "exec": {
+   "amount": [
+    {
+     "amount": "2500000",
+     "denom": "usix"
+    }
+   ],
+   "gas": "2000000"
+  }
+ }
+}

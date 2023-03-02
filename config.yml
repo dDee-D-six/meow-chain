@@ -10,15 +10,11 @@ accounts:
 - name: alice
   coins:
   - 10100000000000000000000000ameow
-  mnemonic: history perfect across group seek acoustic delay captain sauce audit carpet
-    tattoo exhaust green there giant cluster want pond bulk close screen scissors
-    remind
+  mnemonic: dentist tomato kick join sure exit bamboo actor mean million embark insane faint beauty mass marble husband jealous biology clay shell theory craft shrimp
 - name: bob
   coins:
   - 5000000000000ameow
-  mnemonic: limb sister humor wisdom elephant weasel beyond must any desert glance
-    stem reform soccer include chest chef clerk call popular display nerve priority
-    venture
+  mnemonic: remain switch sentence try famous wonder column jazz artist slender vacant stay beach leg fatigue fly enhance wage member shell verify pepper still begin
 faucet:
   name: bob
   coins:
